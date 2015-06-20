@@ -1,3 +1,12 @@
+## makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
+## INPUT: invertible matrix
+## examples: matrix(1:4, 2,2);  matrix(rnorm(16),4,4)
+##
+## cacheSolve: This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
+## example of INPUT: makeCacheMatrix(matrix(1:4,2,2))
+## OUTPUT: inverse 
+
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   
